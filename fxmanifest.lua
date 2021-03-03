@@ -1,4 +1,4 @@
-fx_version 'bodacious'
+fx_version 'adamant'
 game 'gta5'
 description 'Bug Report UI with discord webhook'
 version '1.0.0'
