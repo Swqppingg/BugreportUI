@@ -7,9 +7,6 @@
 
 **Pictures:**
 
-In-game UI:
-![Screenshot](https://i.imgur.com/UOzrdx3.png)
+![In-game UI](https://i.imgur.com/UOzrdx3.png)
 
-
-Discord Webhook:
-![Screenshot](https://i.imgur.com/g29JtVI.png)
+![Discord Webhook](https://i.imgur.com/g29JtVI.png)
