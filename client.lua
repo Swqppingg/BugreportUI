@@ -22,8 +22,8 @@ RegisterCommand('bugreport', function(source)
 	openGui()
 end)
 
-RegisterNetEvent("bugreports:openGui")
-AddEventHandler("bugreports:openGui", function(user_id)
+RegisterNetEvent("BugreportUI:openGui")
+AddEventHandler("BugreportUI:openGui", function(user_id)
 	user_id = user_id
     openGui()
 end)
