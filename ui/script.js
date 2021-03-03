@@ -11,7 +11,7 @@ $(document).ready(function () {
   });
   document.onkeyup = function (data) {
     if (data.which == 27) {
-      $.post('http://bugreports/close', JSON.stringify({}));
+      $.post('http://BugreportUI/close', JSON.stringify({}));
     }
   };
 
@@ -24,7 +24,7 @@ $(document).ready(function () {
     }
     else {
       data = [discord,description];
-      $.post('http://bugreports/sendReport', JSON.stringify({data}));
+      $.post('http://BugreportUI/sendReport', JSON.stringify({data}));
     }
   });
 
