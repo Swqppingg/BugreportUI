@@ -34,13 +34,13 @@ RegisterNUICallback("sendReport", function(data)
   if (discord == "" or description == "") then
 
   else
-    TriggerServerEvent("bugreports:sendReport", data)
+    TriggerServerEvent("BugreportUI:sendReport", data)
   end
 
 end)
 
-RegisterNetEvent("bugreports:reportSent")
-AddEventHandler("bugreports:reportSent", function(user_id)
+RegisterNetEvent("BugreportUI:reportSent")
+AddEventHandler("BugreportUI:reportSent", function(user_id)
 	user_id = user_id
     closeGui()
 end)
