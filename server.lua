@@ -30,6 +30,16 @@ AddEventHandler("BugreportUI:sendReport", function(data)
 
 end)
 
+
+Citizen.CreateThread(function()
+	if (GetCurrentResourceName() ~= "BugreportUI") then 
+		print("[" .. GetCurrentResourceName() .. "] " .. "IMPORTANT: This resource must be named BugreportUI for it to work properly!");
+		print("[" .. GetCurrentResourceName() .. "] " .. "IMPORTANT: This resource must be named BugreportUI for it to work properly!");
+		print("[" .. GetCurrentResourceName() .. "] " .. "IMPORTANT: This resource must be named BugreportUI for it to work properly!");
+		print("[" .. GetCurrentResourceName() .. "] " .. "IMPORTANT: This resource must be named BugreportUI for it to work properly!");
+	end
+end)
+
 -- Version Check
 Citizen.CreateThread(
 	function()
