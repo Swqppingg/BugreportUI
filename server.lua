@@ -1,5 +1,5 @@
-RegisterNetEvent("bugreports:sendReport")
-AddEventHandler("bugreports:sendReport", function(data)
+RegisterNetEvent("BugreportUI:sendReport")
+AddEventHandler("BugreportUI:sendReport", function(data)
 
   discord = data['data'][1]
   description = data['data'][2]
@@ -23,7 +23,7 @@ AddEventHandler("bugreports:sendReport", function(data)
     }), { ['Content-Type'] = 'application/json' })
 
 
-  TriggerClientEvent("bugreports:reportSent", source)
+  TriggerClientEvent("BugreportUI:reportSent", source)
   TriggerClientEvent("pNotify:SendNotification", source,{text = "Your bug report was successfully sent to our developers", type = "success", queue = "global", timeout = 4000, layout = "bottomCenter",animation = {open = "gta_effects_open", close = "gta_effects_fade_out"},killer = true})
 
 
