@@ -1,8 +1,10 @@
 **Requirements:**
+
 [pNotify](https://forum.cfx.re/t/release-pnotify-in-game-js-notifications-using-noty/20659)
 
 
 **Commands:**
+
 /bugreport - Opens the bugreport UI
 
 **Pictures:**
