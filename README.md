@@ -9,6 +9,6 @@
 
 **Pictures:**
 
-![In-game UI](https://i.imgur.com/UOzrdx3.png)
+![In-game UI](https://i.imgur.com/0px6FPz.png)
 
 ![Discord Webhook](https://i.imgur.com/g29JtVI.png)
