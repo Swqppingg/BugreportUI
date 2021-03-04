@@ -20,16 +20,17 @@ $(document).ready(function () {
     var discord = document.getElementById("discord").value;
     var description = document.getElementById("description").value;
     if (discord == "" || description == "") {
-      console.log("Something went wrong")
+      console.log("Fill in all fields")
     }
     else {
       data = [discord,description];
       $.post('http://BugreportUI/sendReport', JSON.stringify({data}));
+      document.getElementById('description').value = ''
+      document.getElementById('discord').value = ''
     }
   });
 
 });
-
 
 function openHome() {
   $("body").css("display", "block");
@@ -38,3 +39,4 @@ function openHome() {
 function close() {
   $("body").css("display", "none");
 }
+

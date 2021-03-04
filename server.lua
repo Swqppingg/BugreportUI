@@ -43,11 +43,12 @@ end)
 -- Version Check
 Citizen.CreateThread(
 	function()
+		if Config.versionchecker then
 		local vRaw = LoadResourceFile(GetCurrentResourceName(), 'version.json')
 		if vRaw and Config.versionCheck then
 			local v = json.decode(vRaw)
 			PerformHttpRequest(
-				'https://raw.githubusercontent.com/Swqppingg/FiveM-BugreportUI/main/version.json',
+				'https://raw.githubusercontent.com/Swqppingg/BugreportUI/main/version.json',
 				function(code, res, headers)
 					if code == 200 then
 						local rv = json.decode(res)
@@ -73,4 +74,4 @@ CHANGELOG: %s
 			)
 		end
 	end
-)
+end)

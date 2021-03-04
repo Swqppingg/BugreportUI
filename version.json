@@ -1,5 +1,5 @@
 {
-	"date": "March 2, 2021",
-	"version": "1.0.0",
-	"changelog": "First Release"
+	"date": "March 4, 2021",
+	"version": "1.0.1",
+	"changelog": "UI changes, Added an option to disable version checker, Fixed version checker github link, All fields now get reset when you submit a bug"
 }
