@@ -14,19 +14,20 @@ body {
 
 .top {
   padding-top: 1%;
-  background-color: black;
+  background-color: #040404;
   color: white;
   border-radius: 5px 5px 5px 5px;
 }
 
 .abusenote {
   text-align: center;
+  color: #FFFFFF;
 }
 
 .main {
   padding: 1%;
   padding-top: 5%;
-  background-color: white;
+  background-color: #141414;
   color: black;
   border-radius: 0% 0% 5px 2px;
   text-align: left;
@@ -38,6 +39,7 @@ body {
   float: left;
   width: 60%;
   margin-top: 6px;
+  color: #FFFFFF;
 }
 
 .col-75 {

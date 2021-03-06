@@ -39,10 +39,16 @@ RegisterNUICallback("sendReport", function(data)
 
 end)
 
+
 RegisterNetEvent("BugreportUI:reportSent")
 AddEventHandler("BugreportUI:reportSent", function(user_id)
 	user_id = user_id
     closeGui()
+end)
+
+
+RegisterNUICallback("emptyFields", function()
+  TriggerServerEvent("BugreportUI:emptyFields")
 end)
 
 RegisterNUICallback("close", function()

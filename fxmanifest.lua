@@ -1,7 +1,7 @@
 fx_version 'adamant'
 game 'gta5'
 description 'Bug Report UI with discord webhook'
-version '1.0.1'
+version '1.1.0'
 
 ui_page "ui/index.html"
 

@@ -11,22 +11,28 @@ $(document).ready(function () {
   });
   document.onkeyup = function (data) {
     if (data.which == 27) {
-      $.post('http://BugreportUI/close', JSON.stringify({}));
+      $("body").fadeOut("slow","linear")
+       setTimeout(function(){
+            $.post(`http://BugreportUI/close`, JSON.stringify({}));
+        }, 130);
     }
   };
 
-
-  $(".sendReport").click(function () {
-    var discord = document.getElementById("discord").value;
+  $(".sendReport").click(function () { 
+    //var discord = document.getElementById("discord").value;
     var description = document.getElementById("description").value;
     if (discord == "" || description == "") {
       console.log("Fill in all fields")
+      $.post(`http://BugreportUI/emptyFields`, JSON.stringify({}));
     }
     else {
       data = [discord,description];
-      $.post('http://BugreportUI/sendReport', JSON.stringify({data}));
+      $.post(`http://BugreportUI/sendReport`, JSON.stringify({data}));
+      $("body").fadeOut("slow","linear")
+       setTimeout(function(){
+            $.post(`http://BugreportUI/close`, JSON.stringify({}));
+        }, 200);
       document.getElementById('description').value = ''
-      document.getElementById('discord').value = ''
     }
   });
 
