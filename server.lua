@@ -59,6 +59,7 @@ Citizen.CreateThread(
 BugreportUI
 UPDATE: %s AVAILABLE
 CHANGELOG: %s
+DOWNLOAD: https://github.com/Swqppingg/BugreportUI
 -------------------------------------------------------
 ^0]]):format(
 									rv.version,
