@@ -36,7 +36,7 @@ if Config.displayidentifiers then
         {
           title = "New Bug Report",
           color = 16754176,
-          description = "**User:** ".. GetPlayerName(source) .. " **[ID:** ".. source .."**]**\n**Bug Description:** ".. description .."\n**Steam:** ".. steam:gsub('discord:', '') .."\n**GameLicense:** ".. license:gsub('discord:', '') .."\n**Discord UID:** ".. discord:gsub('discord:', '') .."\n**Discord Tag:** <@!"..  discord:gsub('discord:', '') .. ">",
+          description = "**User:** ".. GetPlayerName(source) .. " **[ID:** ".. source .."**]**\n**Bug Description:** ".. description .."\n**Steam:** ".. steam:gsub('steam:', '') .."\n**GameLicense:** ".. license:gsub('license:', '') .."\n**Discord UID:** ".. discord:gsub('discord:', '') .."\n**Discord Tag:** <@!"..  discord:gsub('discord:', '') .. ">",
         }
       },
     }), { ['Content-Type'] = 'application/json' })
