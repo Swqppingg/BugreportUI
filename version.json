@@ -1,5 +1,0 @@
-{
-	"date": "March 6, 2021",
-	"version": "1.1.0",
-	"changelog": "Changed UI to dark mode, Updated discord embed, Added an option in the config to display the users identifiers, Added icons next to the text, You now get notifications in server console if the webhook is WEBHOOK_HERE"
-}
